@@ -16,8 +16,6 @@ onlyAllow fn a = guard (fn a) >> return a
 
 valid = onlyAllow (not . null)
 
-str = ""
-
 elements :: [String]
 elements = Just "something" ?:
            Nothing          ?:
