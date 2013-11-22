@@ -1,5 +1,6 @@
 
-# Maybe Cons
+Maybe Cons
+==========
 
 Build a list from Maybe-typed elements
 
