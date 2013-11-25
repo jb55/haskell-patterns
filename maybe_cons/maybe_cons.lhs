@@ -13,6 +13,7 @@ Build a list from Maybe-typed elements
 > onlyAllow :: MonadPlus m => (a -> Bool) -> a -> m a
 > onlyAllow fn a = guard (fn a) >> return a
 > 
+> valid :: MonadPlus m => [a] -> m [a]
 > valid = onlyAllow (not . null)
 > 
 > elements :: [String]
